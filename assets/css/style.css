@@ -134,18 +134,20 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
+  width: 100%;
   height: 100%;
   background: var(--goldan);
   z-index: 1;
+  transform: rotate(45deg);
 }
 
-.homePage .header{
+.homePage .header {
   position: absolute;
-  top: 200px;
+  top: 100px;
   right: 40px;
   z-index: 1;
 }
+
 .homePage .header .header_main{
  display: flex; 
  align-items: flex-end;
@@ -155,7 +157,10 @@
 .homePage .header .navbar ul{
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
+}
+.homePage .header .navbar ul li{
+  width: 100%;
 }
 
 .about_me{
@@ -171,17 +176,114 @@
   text-align: left;
   font-size: 20px;
   margin-right: 150px;
+  color: #ffffffbb;
 }
-.about_btn{
-  color: #ffffff;
-  border: 2px solid var(--goldan);
-  border-radius: 50px;
-  padding: 15px 30px;
+
+.fancy {
   margin-top: 50px;
+  background-color: transparent;
+  border: 2px solid #ffffff88;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+ }
+ 
+ .fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: #fff;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+ }
+ 
+ .fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-}
-
-
+  text-decoration: none;
+  color: #fff;
+ }
+ 
+ .fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: var(--goldan);
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+ }
+ 
+ .fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: var(--goldan);
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+ }
+ 
+ .fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: var(--goldan);
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+ }
+ 
+ .fancy:hover {
+  color: white;
+  background: black;
+  border-color: transparent;
+ }
+ 
+ .fancy:hover::before {
+  width: 0.9375rem;
+  background: white;
+ }
+ 
+ .fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+ }
+ 
+ .fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+ }
+ 
+ .fancy:hover .bottom-key-1,
+  .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+ }
 
 
 
@@ -632,7 +734,7 @@ a:hover {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  z-index: 10px;
+  z-index: 10;
   padding: 20px 0;
 }
 
@@ -681,7 +783,7 @@ a:hover {
 
 .navbar>ul>li {
   white-space: nowrap;
-  padding: 10px 0 10px 30px;
+  padding: 10px 15px 10px;
 }
 
 .navbar a,
@@ -690,7 +792,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
   padding: 0;
   white-space: nowrap;
@@ -719,6 +821,18 @@ a:hover {
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
+/* .navbar>ul>li>a:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  bottom: 0px;
+  top: 0px;
+  margin: auto;
+  right: -35px;
+  background-color: var(--goldan);
+  transition: all 0.3s ease-in-out 0s;
+} */
 
 .navbar a:hover:before,
 .navbar li:hover>a:before,
@@ -940,12 +1054,11 @@ a:hover {
 }
 
 .hero .hero-title {
-  color:#ffffffba;
+  color: #ffffff;
   font-weight: 400;
   letter-spacing: 4px;
   word-spacing: 10px;
-  text-shadow: 4px 3px 5px var(--goldan);
-  font-size: 3rem;
+  text-shadow: 4px 3px 5px #111111;
   font-family: var(--tank_font);
 }
 
@@ -958,6 +1071,7 @@ a:hover {
 .hero .hero-subtitle {
   font-size: 1.5rem;
   font-weight: 600;
+  color: #ffffffbb;
 }
 
 @media (min-width: 768px) {
