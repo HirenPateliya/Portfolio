@@ -176,13 +176,13 @@
 
 @keyframes anim{
   to{
-      margin-top: -100px;
+      margin-top: -150px;
   }
 }
 
 @keyframes anim2{
   to{
-      transform: translateY(-100%);
+      transform: translateY(-150%);
   }
 }
 
