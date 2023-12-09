@@ -110,7 +110,9 @@
   margin: 0;
   padding: 0;
 }
-
+.fp-warning, .fp-watermark a{
+  display: none !important;
+}
 
 
 /* loader */
@@ -127,8 +129,9 @@
   top: 0;
   left: 0;
   z-index: 9999;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   background-color: #000000;
   animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
 }
@@ -187,6 +190,37 @@
 }
 
 /* ============================================================================= */
+/* 
+#fullpage{
+  overflow: hidden;
+  height: 100vh;
+} */
+
+/* .aboutPage,
+.servicePage,
+.workPage,
+.blogPage,
+.contactPage{
+  width: 100vw;
+  height: 100vh;
+} */
+
+.homePage{
+  background-color: var(--c_black);
+  overflow: hidden;
+}
+.servicePage{
+  background-color: #757500;
+}
+.workPage{
+  background-color: rebeccapurple;
+}
+.blogPage{
+  background-color: palevioletred;
+}
+.contactPage{
+  background-color: khaki;
+}
 
 
 
@@ -196,9 +230,12 @@
 
 
 
-
-
-
+#particles-js{
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
 
 .my_img{
   width: 500px;
@@ -210,7 +247,7 @@
 }
 
 
-.homePage{
+.aboutPage{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -218,7 +255,7 @@
   background: var(--c_black);
 }
 
-.homePage::before{
+.aboutPage::before{
   content: "";
   position: absolute;
   top: 0;
@@ -230,25 +267,25 @@
   transform: rotate(45deg);
 }
 
-.homePage .header {
-  position: absolute;
+.header {
+  position: fixed;
   top: 100px;
   right: 40px;
-  z-index: 1;
+  z-index: 999;
 }
 
-.homePage .header .header_main{
+ .header .header_main{
  display: flex; 
  align-items: flex-end;
  justify-content: flex-end;
 }
 
-.homePage .header .navbar ul{
+ .header .navbar ul{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.homePage .header .navbar ul li{
+ .header .navbar ul li{
   width: 100%;
 }
 
@@ -925,7 +962,7 @@ a:hover {
 
 .navbar a:hover:before,
 .navbar li:hover>a:before,
-.navbar .active:before {
+.navbar li.active a:before {
   visibility: visible;
   width: 80%;
 }
@@ -1851,3 +1888,13 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+
+
+
+
+
+
+
+
+

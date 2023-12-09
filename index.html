@@ -1,123 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage full-screen normal scrolling with autoScrolling." />
+    <meta name="keywords"  content="portfolio" />
+    <meta name="Resource-type" content="Document" />
+    
+    <!-- Favicons -->
+    <link id="favicon" href="assets/img/favicon.png" rel="icon">
+    <title>Portfolio | Hiren Pateliya</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>HirenPateliya</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="/assets/js/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/js/examples.css" />
+    <link href="/assets/js/style.css" rel="stylesheet">
+    <link href="/assets/js/app.css" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.jpg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+	</head>
+	<body>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- loader -->
+    <!-- <div id="loader">
+      <div id="wrapperload">
+          <div class="elem">
+              <h2 class="hero-title">Hiren Pateliya</h2>
+          </div>
+          <div class="elem">
+              <h3>Web Developer</h3>
+          </div>
+          <div class="elem">
+              <h3>Loves to Help Brands.</h3>
+          </div>
+          <div class="elem">
+              <h2 class="hero-title">Hiren Pateliya</h2>
+          </div>
+      </div>
+    </div> -->
 
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <div id="loader">
-    <div id="wrapperload">
-        <div class="elem">
-            <h2 class="hero-title">Hiren Pateliya</h2>
-        </div>
-        <div class="elem">
-            <h3>Web Developer</h3>
-        </div>
-        <div class="elem">
-            <h3>Loves to Help Brands.</h3>
-        </div>
-        <div class="elem">
-            <h2 class="hero-title">Hiren Pateliya</h2>
-        </div>
-    </div>
-</div>
-
- <section class="homePage">
-  <div id="tsparticles" class=" ">
-  </div>
-   <!-- ======= Header ======= -->
-  <header id="header" class=" header">
+ <!-- ======= Header ======= -->
+  <header class=" header">
     <div class="header_main">
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
-         
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <ul id="menu_main">
+          <li data-menuanchor="home"><a href="#home">Home</a></li>
+          <li data-menuanchor="about"><a href="#about">About</a></li>
+          <li data-menuanchor="service"><a href="#service">Services</a></li>
+          <li data-menuanchor="work"><a href="#work">Work</a></li>
+          <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
 
     </div>
-  </header><!-- End Header -->
+    </header>
+  <!-- </header>End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container-fluid">
-         <div class="row">
-          <div class="col-4">
-            <img src="/assets/img/hiren.png" alt="" class="my_img">
+  
+    <section id="fullpage">
+
+      <section class="section homePage">
+        <div id="particles-js"></div>
+        
+        <div class="home_page_main">
+          <div class="overlay-itro"></div>
+          <div class="container-fluid py-5">
+            <div class="row justify-content-center">
+              <div class="col-5 about_me">
+                <h3 class="hero-title small_title_home mb-4 leftitem">Hi There,</h3>
+                <h1 class="hero-title mb-4">i'm Hiren <span>pateliya</span></h1>
+                <p class="hero-subtitle leftitem">i am into <span class="typed" data-typed-items="Web Designer, front-end developer ,Web Developer"></span></p>
+                
+                <a class="fancy leftitem" href="#about">
+                  <!-- <span class="top-key"></span> -->
+                  <span class="text">more about me</span>
+                  <!-- <span class="bottom-key-1"></span> -->
+                  <!-- <span class="bottom-key-2"></span> -->
+                </a>  
+                
+                <div class="socials">
+                  <ul class="social-icons">
+                    <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/jigar-sable/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+                    <li><a class="github" aria-label="GitHub" href="https://github.com/jigar-sable" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                    <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/jigarsable.dev"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                    <li><a class="dev" aria-label="Dev" href="https://dev.to/jigarsable" target="_blank"><i class="fab fa-dev"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4">
+                <img src="/assets/img/hero.png" alt="" class="home_img tilt" draggable="false" >
+              </div>
+            </div>
           </div>
-          <div class="col-6 about_me">
-            <h1 class="hero-title small_title mb-4">Hello, I am 👋</h1>
-            <h1 class="hero-title mb-4">Hiren pateliya</h1>
-            <p class="hero-subtitle"><span class="typed" data-typed-items="Web Designer, Web Developer"></span></p>
-            <p class="about_content">As a web developer, my passion lies in crafting digital experiences that seamlessly blend creativity and functionality. With a strong foundation in HTML, CSS, JavaScript, and a keen eye for design, I specialize in turning ideas into captivating websites. My portfolio showcases a diverse range of projects, from responsive and mobile-friendly designs to dynamic web applications that elevate user engagement.</p>
-            <a class="fancy" href="#">
-              <span class="top-key"></span>
-              <span class="text">more about me</span>
-              <span class="bottom-key-1"></span>
-              <span class="bottom-key-2"></span>
-            </a>
-          </div>
-         </div>
         </div>
-      </div>
-    </div>
-  </div><!-- End Hero Section -->
+      </section>
+      <section class="section aboutPage">
+         <!-- ======= Hero Section ======= -->
+          <div id="hero" class="hero route bg-image">
+            <div class="overlay-itro"></div>
+              <div class="hero-content display-table">
+                <div class="table-cell">
+                  <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-5">
+                      <img src="/assets/img/hiren.png" alt="" class="my_img tilt">
+                    </div>
+                    <div class="col-6 about_me">
+                      <h1 class="hero-title mb-4">about me</h1>
+                      <p class="hero-subtitle leftitem"><span class="typed" data-typed-items="Web Designer, Web Developer"></span></p>
+                      <p class="about_content leftitem">As a web developer, my passion lies in crafting digital experiences that seamlessly blend creativity and functionality. With a strong foundation in HTML, CSS, JavaScript, and a keen eye for design, I specialize in turning ideas into captivating websites. My portfolio showcases a diverse range of projects, from responsive and mobile-friendly designs to dynamic web applications that elevate user engagement.</p>
 
- </section>
- 
+                      <p class="about_content details leftitem"><span>Email : </span>pateliyahiren90@gmail.com</p>
+                      <p class="about_content details leftitem"><span>Location : </span>Ahmedabad, India - 382350</p>
+                      <a class="fancy leftitem" href="https://drive.google.com/file/d/1cZxYR_qtNYS7XCHCXqHL5NKAbghsvmjE/view" target="_blank">
+                        <span class="top-key"></span>
+                        <span class="text">r e s u m e</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+          <!-- </div>End Hero Section -->
+          </div>
+      </section>
+      <section class="section servicePage">
+      </section>
+      <section class="section workPage">
+      </section>
+      <section class="section contactPage">
+      </section>
+    </section>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/hero_js.js"></script>
 </body>
 
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Bootstrap cdn -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/part_animation.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- GSAP Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+<!-- Fullpage scroll -->
+<script type="text/javascript" src="/assets/js/fullpage.js"></script>
+<script type="text/javascript" src="/assets/js/examples.js"></script> 
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/hero_js.js"></script>
+<script src="assets/js/app.js"></script>
 </html>
+
+
+
+
