@@ -1062,7 +1062,7 @@ a:hover {
   font-family: var(--tank_font);
 }
 .hero .hero-title.small_title{
-  font-size: 24px;
+  font-size: 40px;
 }
 
 @media (min-width: 768px) {
