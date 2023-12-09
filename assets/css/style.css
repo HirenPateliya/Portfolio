@@ -115,8 +115,9 @@
 
 /* loader */
 
-#loader> *{
+#loader h3{
   color: #ffffff !important;
+  font-size: 40px;
 }
 #loader{
   display: flex;
@@ -154,6 +155,7 @@
   word-spacing: 10px;
   text-shadow: 4px 3px 5px #111111;
   font-family: var(--tank_font);
+  font-size: 100px;
 }
 
 #wrapperload .elem img{
