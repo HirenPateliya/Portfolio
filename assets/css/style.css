@@ -174,17 +174,17 @@
   animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
 }
 
-@keyframes anim{
+/* @keyframes anim{
   to{
       margin-top: -150px;
   }
-}
+} */
 
-@keyframes anim2{
+/* @keyframes anim2{
   to{
-      transform: translateY(-150%);
+      transform: translateY(-100%);
   }
-}
+} */
 
 /* ============================================================================= */
 
