@@ -107,3 +107,12 @@
     color: #fff;
     font-weight: 800;
   }
+
+
+/* responsive css */
+
+@media (max-width: 1499px) {
+    .home_page_main .hero-title {
+        font-size: 70px;
+    }
+}
