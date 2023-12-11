@@ -93,7 +93,8 @@
 
 :root{
   --c_black : #111111;
-  --goldan : #757500;
+  --goldan : #AF9B46;
+  /* --goldan : #757500; */
   --sup_font : 'Supreme-Regular';
   --tank_font : 'Tanker-Regular';
 }
@@ -238,12 +239,14 @@
 }
 
 .my_img{
-  width: 500px;
-  height: 650px;
+  width: 340px;
+  height: 450px;
   object-fit: cover;
   position: relative;
   z-index: 2;
   background-color: #000000;
+  border-radius: 20px;
+  margin-left: 50px;
 }
 
 
@@ -269,7 +272,7 @@
 
 .header {
   position: fixed;
-  top: 100px;
+  top: 50px;
   right: 40px;
   z-index: 999;
 }
@@ -281,7 +284,7 @@
 }
 
  .header .navbar ul{
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
 }
@@ -296,6 +299,7 @@
   align-items: flex-start;
   position: relative;
   z-index: 12;
+  margin-left: -50px;
 }
 
 .about_content{
@@ -918,7 +922,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   padding: 0;
   white-space: nowrap;
@@ -964,7 +968,7 @@ a:hover {
 .navbar li:hover>a:before,
 .navbar li.active a:before {
   visibility: visible;
-  width: 80%;
+  width: 100%;
 }
 
 .navbar a:hover,

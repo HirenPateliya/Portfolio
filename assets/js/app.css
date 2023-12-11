@@ -4,6 +4,7 @@
 .home_page_main{
     z-index: 99;
     position: relative;
+    padding-top: 150px;
 }
 .home_img {
     width: 70%;
@@ -26,7 +27,7 @@
     font-size: 80px;
   }
  .home_page_main .hero-title span{
-    color: #ff7b00;
+    color: #AF9B46;
     font-family: var(--tank_font);
   }
  .home_page_main .hero-subtitle{
@@ -36,7 +37,7 @@
     color: rgb(148, 8, 8);
 }
 .home_page_main .fancy:hover {
-    background: #ff7b00;
+    background: #AF9B46;
 }
 
 /* social icons start */
@@ -57,7 +58,7 @@
     font-size: 2rem;
     display: inline-block;
     line-height: 44px;
-    color: #ff7b00;
+    color: #122620;
     background-color: #fafafab7;
     width: 44px;
     height: 44px;
@@ -99,12 +100,13 @@
     margin-top: 30px;
     margin-bottom: 5px;
 }
-    .about_content.details{
-      color: #000;
-      font-weight: 800;
+  .about_content.details{
+      color: #fff;
+    font-weight: 500;
+    line-height: 30px;
   }
   .about_content.details span{
-    color: #fff;
+    color: #122620;
     font-weight: 800;
   }
 
