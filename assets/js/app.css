@@ -128,14 +128,19 @@
   }
   .home_img {
     width: 50%;
-    margin-left: 0;
-    text-align: left;
+    margin-left: 50px;
+    display: flex;
   }
   .home_page_main .hero-title {
     font-size: 100px;
   }
   .home_page_main .hero-title.small_title_home {
     font-size: 72px;
+  }
+  .my_img {
+    width: 520px;
+    height: 700px;
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 800px) {}
